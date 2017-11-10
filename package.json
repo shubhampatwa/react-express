@@ -4,12 +4,15 @@
   "description": "Authentication in React Applications using express along with jwt",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon --use_strict index.js",
+    "start": "nodemon index.js",
     "bundle": "webpack-dev-server --progress --inline --hot"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/shubhampatwa/react-express-jwt-authentication.git"
+  },
+  "engines": {
+    "node": "8.5.0"
   },
   "keywords": [
     "jwt",
@@ -37,11 +40,15 @@
     "validator": "^9.1.1"
   },
   "devDependencies": {
+    "babel-cli": "^6.26.0",
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.2",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
     "babel-preset-es2015": "^6.24.1",
     "babel-preset-react": "^6.24.1",
     "babel-preset-react-hmre": "^1.1.1",
+    "babel-register": "^6.26.0",
     "nodemon": "^1.12.1",
     "react-hot-loader": "^3.0.0",
     "standard": "^10.0.3",
